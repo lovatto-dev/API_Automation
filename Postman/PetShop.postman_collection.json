@@ -1,0 +1,487 @@
+{
+	"info": {
+		"_postman_id": "e7907614-71d7-414d-abbf-ed84e7fd94d9",
+		"name": "PetShop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17993042",
+		"_collection_link": "https://warped-meadow-679279.postman.co/workspace/Primary~f45e652e-e406-4419-bb19-2701375424a0/collection/17993042-e7907614-71d7-414d-abbf-ed84e7fd94d9?action=share&source=collection_link&creator=17993042"
+	},
+	"item": [
+		{
+			"name": "Crear usuario - ValidacionEnvioOk",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"format JSON\", function () {\r",
+							"    pm.response.to.be.json;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verificar el payload\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    \r",
+							"    // Validar las propiedades y sus tipos de datos\r",
+							"    pm.expect(jsonData).to.have.property(\"code\");\r",
+							"    pm.expect(jsonData.code).to.be.a(\"number\");\r",
+							"    pm.expect(jsonData.code).to.equal(200);\r",
+							"\r",
+							"    pm.expect(jsonData).to.have.property(\"type\");\r",
+							"    pm.expect(jsonData.type).to.be.a(\"string\");\r",
+							"    pm.expect(jsonData.type).to.equal(\"unknown\");\r",
+							"\r",
+							"    pm.expect(jsonData).to.have.property(\"message\");\r",
+							"    pm.expect(jsonData.message).to.be.a(\"string\");\r",
+							"    pm.expect(jsonData.message).to.equal(\"ok\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"id\": 12,\r\n    \"username\": \"Prueba\",\r\n    \"firstName\": \"nombre\",\r\n    \"lastName\": \"apellido\",\r\n    \"email\": \"algo@mail.com\",\r\n    \"password\": \"abcd1234\",\r\n    \"phone\": \"abcd1234\",\r\n    \"userStatus\": 1\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/createWithList",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"createWithList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear usuario - ValidacionEnvioOk CSV",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"format JSON\", function () {\r",
+							"    pm.response.to.be.json;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verificar el payload\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    \r",
+							"    // Validar las propiedades y sus tipos de datos\r",
+							"    pm.expect(jsonData).to.have.property(\"code\");\r",
+							"    pm.expect(jsonData.code).to.be.a(\"number\");\r",
+							"    pm.expect(jsonData.code).to.equal(200);\r",
+							"\r",
+							"    pm.expect(jsonData).to.have.property(\"type\");\r",
+							"    pm.expect(jsonData.type).to.be.a(\"string\");\r",
+							"    pm.expect(jsonData.type).to.equal(\"unknown\");\r",
+							"\r",
+							"    pm.expect(jsonData).to.have.property(\"message\");\r",
+							"    pm.expect(jsonData.message).to.be.a(\"string\");\r",
+							"    pm.expect(jsonData.message).to.equal(\"ok\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"id\": {{id}},\r\n    \"username\": \"{{username}}\",\r\n    \"firstName\": \"{{firstname}}\",\r\n    \"lastName\": \"{{lastname}}\",\r\n    \"email\": \"{{email}}\",\r\n    \"password\": \"{{password}}\",\r\n    \"phone\": \"{{phone}}\",\r\n    \"userStatus\": {{userstatus}}\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/createWithList",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"createWithList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear usuario - ValidacionEnvioCamposObligatorios",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Código 500\", function () {\r",
+							"    pm.response.to.have.status(500); \r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validar Mensaje de error\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.property(\"message\");\r",
+							"    pm.expect(jsonData.message).to.be.a(\"string\");\r",
+							"    pm.expect(jsonData.message).to.equal(\"something bad happened\");\r",
+							"});\r",
+							"\r",
+							"// EN ESTE CASO LA API NO ARROJA ERRORES ESPECIFICOS, PERO DEJO LA VALIDACION A MODO DE EJEMPLO\r",
+							"pm.test(\"Errores específicos en campos\", function () {\r",
+							"    var jsonData = pm.response.json();    \r",
+							"    pm.expect(jsonData).to.have.property(\"errors\");\r",
+							"    pm.expect(jsonData.errors).to.be.an(\"array\");\r",
+							"\r",
+							"         var idError = jsonData.errors.find(function(error) {\r",
+							"    return error.field === \"id\";\r",
+							"    });\r",
+							"    pm.expect(idError).to.exist;\r",
+							"    pm.expect(idError.message).to.equal(\"El campo es obligatorio.\");\r",
+							"\r",
+							"         var idError = jsonData.errors.find(function(error) {\r",
+							"    return error.field === \"userName\";\r",
+							"    });\r",
+							"    pm.expect(userNameError).to.exist;\r",
+							"    pm.expect(userNameError.message).to.equal(\"El campo es obligatorio.\");\r",
+							"\r",
+							"         var idError = jsonData.errors.find(function(error) {\r",
+							"    return error.field === \"firstName\";\r",
+							"    });\r",
+							"    pm.expect(firstNameError).to.exist;\r",
+							"    pm.expect(firstNameError.message).to.equal(\"El campo es obligatorio.\");\r",
+							"        \r",
+							"         var idError = jsonData.errors.find(function(error) {\r",
+							"    return error.field === \"lastName\";\r",
+							"    });\r",
+							"    pm.expect(lastNameError).to.exist;\r",
+							"    pm.expect(lastNameError.message).to.equal(\"El campo es obligatorio.\");\r",
+							"        \r",
+							"         var idError = jsonData.errors.find(function(error) {\r",
+							"    return error.field === \"email\";\r",
+							"    });\r",
+							"    pm.expect(emailError).to.exist;\r",
+							"    pm.expect(emailError.message).to.equal(\"El campo es obligatorio.\");\r",
+							"        \r",
+							"         var idError = jsonData.errors.find(function(error) {\r",
+							"    return error.field === \"password\";\r",
+							"    });\r",
+							"    pm.expect(passwordError).to.exist;\r",
+							"    pm.expect(passwordError.message).to.equal(\"El campo es obligatorio.\");\r",
+							"        \r",
+							"         var idError = jsonData.errors.find(function(error) {\r",
+							"    return error.field === \"phone\";\r",
+							"    });\r",
+							"    pm.expect(phoneError).to.exist;\r",
+							"    pm.expect(phoneError.message).to.equal(\"El campo es obligatorio.\");\r",
+							"\r",
+							"             var idError = jsonData.errors.find(function(error) {\r",
+							"    return error.field === \"userStatus\";\r",
+							"    });\r",
+							"    pm.expect(userStatusError).to.exist;\r",
+							"    pm.expect(userStatusError.message).to.equal(\"El campo es obligatorio.\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"id\": {{id}},\r\n    \"username\": \"{{username}}\",\r\n    \"firstName\": \"{{firstname}}\",\r\n    \"lastName\": \"{{lastname}}\",\r\n    \"email\": \"{{email}}\",\r\n    \"password\": \"{{password}}\",\r\n    \"phone\": \"{{phone}}\",\r\n    \"userStatus\": {{userstatus}}\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/createWithList",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"createWithList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear usuario - ValidacionEnvioCamposObligatoriosIncorrectos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Código 500\", function () {\r",
+							"    pm.response.to.have.status(500); \r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validar Mensaje de error\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.property(\"message\");\r",
+							"    pm.expect(jsonData.message).to.be.a(\"string\");\r",
+							"    pm.expect(jsonData.message).to.equal(\"something bad happened\");\r",
+							"});\r",
+							"\r",
+							"// EN ESTE CASO LA API NO ARROJA ERRORES ESPECIFICOS, PERO DEJO LA VALIDACION A MODO DE EJEMPLO\r",
+							"pm.test(\"Errores específicos en campos\", function () {\r",
+							"    var jsonData = pm.response.json();    \r",
+							"    pm.expect(jsonData).to.have.property(\"errors\");\r",
+							"    pm.expect(jsonData.errors).to.be.an(\"array\");\r",
+							"\r",
+							"         var idError = jsonData.errors.find(function(error) {\r",
+							"    return error.field === \"id\";\r",
+							"    });\r",
+							"    pm.expect(idError).to.exist;\r",
+							"    pm.expect(numClienteError.message).to.equal(\"El id debe ser un número positivo.\");\r",
+							"\r",
+							"         var idError = jsonData.errors.find(function(error) {\r",
+							"    return error.field === \"userName\";\r",
+							"    });\r",
+							"    pm.expect(userNameError).to.exist;\r",
+							"    pm.expect(numClienteError.message).to.equal(\"El campo userName debe ser un string.\");\r",
+							"\r",
+							"         var idError = jsonData.errors.find(function(error) {\r",
+							"    return error.field === \"firstName\";\r",
+							"    });\r",
+							"    pm.expect(firstNameError).to.exist;\r",
+							"    pm.expect(numClienteError.message).to.equal(\"El campo firstName debe ser un string.\");\r",
+							"        \r",
+							"         var idError = jsonData.errors.find(function(error) {\r",
+							"    return error.field === \"lastName\";\r",
+							"    });\r",
+							"    pm.expect(lastNameError).to.exist;\r",
+							"    pm.expect(numClienteError.message).to.equal(\"El campo lastName debe ser un string.\");\r",
+							"        \r",
+							"         var idError = jsonData.errors.find(function(error) {\r",
+							"    return error.field === \"email\";\r",
+							"    });\r",
+							"    pm.expect(emailError).to.exist;\r",
+							"    pm.expect(numClienteError.message).to.equal(\"El formato del email es incorrecto.\");\r",
+							"        \r",
+							"         var idError = jsonData.errors.find(function(error) {\r",
+							"    return error.field === \"password\";\r",
+							"    });\r",
+							"    pm.expect(passwordError).to.exist;\r",
+							"    pm.expect(numClienteError.message).to.equal(\"El campo password debe ser un string.\");\r",
+							"        \r",
+							"         var idError = jsonData.errors.find(function(error) {\r",
+							"    return error.field === \"phone\";\r",
+							"    });\r",
+							"    pm.expect(phoneError).to.exist;\r",
+							"    pm.expect(numClienteError.message).to.equal(\"El campo phone debe ser numerico de 10 caracteres.\");\r",
+							"\r",
+							"             var idError = jsonData.errors.find(function(error) {\r",
+							"    return error.field === \"userStatus\";\r",
+							"    });\r",
+							"    pm.expect(userStatusError).to.exist;\r",
+							"    pm.expect(numClienteError.message).to.equal(\"El campo usuario debe ser un número positivo.\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"id\": \"A\",\r\n    \"username\": 100,\r\n    \"firstName\": 100,\r\n    \"lastName\": 100,\r\n    \"email\": \"mail.com\",\r\n    \"password\": 111,\r\n    \"phone\": 111,\r\n    \"userStatus\": \"A\"\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/createWithList",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"createWithList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar usuario",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verificar el payload\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    \r",
+							"    // Validar las propiedades y sus tipos de datos\r",
+							"    pm.expect(jsonData).to.have.property(\"id\");\r",
+							"    pm.expect(jsonData.id).to.be.a(\"number\");\r",
+							"    pm.expect(jsonData.id).to.equal(12);\r",
+							"\r",
+							"    pm.expect(jsonData).to.have.property(\"username\");\r",
+							"    pm.expect(jsonData.username).to.be.a(\"string\");\r",
+							"    pm.expect(jsonData.username).to.equal(\"Prueba\");\r",
+							"\r",
+							"    pm.expect(jsonData).to.have.property(\"firstName\");\r",
+							"    pm.expect(jsonData.firstName).to.be.a(\"string\");\r",
+							"    pm.expect(jsonData.firstName).to.equal(\"nombre\");\r",
+							"\r",
+							"    pm.expect(jsonData).to.have.property(\"lastName\");\r",
+							"    pm.expect(jsonData.lastName).to.be.a(\"string\");\r",
+							"    pm.expect(jsonData.lastName).to.equal(\"apellido\");\r",
+							"\r",
+							"    pm.expect(jsonData).to.have.property(\"email\");\r",
+							"    pm.expect(jsonData.email).to.be.a(\"string\");\r",
+							"    pm.expect(jsonData.email).to.equal(\"algo@mail.com\");\r",
+							"\r",
+							"    pm.expect(jsonData).to.have.property(\"password\");\r",
+							"    pm.expect(jsonData.password).to.be.a(\"string\");\r",
+							"    pm.expect(jsonData.password).to.equal(\"abcd1234\");\r",
+							"\r",
+							"    pm.expect(jsonData).to.have.property(\"phone\");\r",
+							"    pm.expect(jsonData.phone).to.be.a(\"string\");\r",
+							"    pm.expect(jsonData.phone).to.equal(\"abcd1234\");\r",
+							"\r",
+							"    pm.expect(jsonData).to.have.property(\"userStatus\");\r",
+							"    pm.expect(jsonData.userStatus).to.be.a(\"number\");\r",
+							"    pm.expect(jsonData.userStatus).to.equal(1);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/Prueba",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"Prueba"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"format JSON\", function () {\r",
+							"    pm.response.to.be.json;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verificar el payload\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    \r",
+							"    // Validar las propiedades y sus tipos de datos\r",
+							"    pm.expect(jsonData).to.have.property(\"code\");\r",
+							"    pm.expect(jsonData.code).to.be.a(\"number\");\r",
+							"    pm.expect(jsonData.code).to.equal(200);\r",
+							"\r",
+							"    pm.expect(jsonData).to.have.property(\"type\");\r",
+							"    pm.expect(jsonData.type).to.be.a(\"string\");\r",
+							"    pm.expect(jsonData.type).to.equal(\"unknown\");\r",
+							"\r",
+							"    pm.expect(jsonData).to.have.property(\"message\");\r",
+							"    pm.expect(jsonData.message).to.be.a(\"string\");\r",
+							"    pm.expect(jsonData.message).to.equal(\"Prueba\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/Prueba",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"Prueba"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
