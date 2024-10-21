@@ -1,0 +1,4 @@
+id,username,firstname,lastname,email,password,phone,userstatus
+001,test001,Pedro,Gomez,pg@mail.com,Abcd1234,1590907701,1
+002,test002,Pablo,Perez,pp@mail.com,1234Abcd,1590907702,1
+003,test003,Maria,Gutie,mg@mail.com,1A2b3c4d,1590907703,1

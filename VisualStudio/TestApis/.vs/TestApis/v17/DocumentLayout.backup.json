@@ -1,0 +1,155 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Fede\\source\\repos\\TestApis\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6F82B580-FFF6-4161-A7A3-2C0AD5301E79}|TestApis\\TestApis.csproj|c:\\users\\fede\\source\\repos\\testapis\\testapis\\mockapiresponse.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6F82B580-FFF6-4161-A7A3-2C0AD5301E79}|TestApis\\TestApis.csproj|solutionrelative:testapis\\mockapiresponse.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F82B580-FFF6-4161-A7A3-2C0AD5301E79}|TestApis\\TestApis.csproj|c:\\users\\fede\\source\\repos\\testapis\\testapis\\utils\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F82B580-FFF6-4161-A7A3-2C0AD5301E79}|TestApis\\TestApis.csproj|solutionrelative:testapis\\utils\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F82B580-FFF6-4161-A7A3-2C0AD5301E79}|TestApis\\TestApis.csproj|c:\\users\\fede\\source\\repos\\testapis\\testapis\\tests\\apitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F82B580-FFF6-4161-A7A3-2C0AD5301E79}|TestApis\\TestApis.csproj|solutionrelative:testapis\\tests\\apitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F82B580-FFF6-4161-A7A3-2C0AD5301E79}|TestApis\\TestApis.csproj|c:\\users\\fede\\source\\repos\\testapis\\testapis\\utils\\apicreateuserbadresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F82B580-FFF6-4161-A7A3-2C0AD5301E79}|TestApis\\TestApis.csproj|solutionrelative:testapis\\utils\\apicreateuserbadresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F82B580-FFF6-4161-A7A3-2C0AD5301E79}|TestApis\\TestApis.csproj|c:\\users\\fede\\source\\repos\\testapis\\testapis\\config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6F82B580-FFF6-4161-A7A3-2C0AD5301E79}|TestApis\\TestApis.csproj|solutionrelative:testapis\\config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F82B580-FFF6-4161-A7A3-2C0AD5301E79}|TestApis\\TestApis.csproj|c:\\users\\fede\\source\\repos\\testapis\\testapis\\utils\\apicreateuserresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F82B580-FFF6-4161-A7A3-2C0AD5301E79}|TestApis\\TestApis.csproj|solutionrelative:testapis\\utils\\apicreateuserresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F82B580-FFF6-4161-A7A3-2C0AD5301E79}|TestApis\\TestApis.csproj|c:\\users\\fede\\source\\repos\\testapis\\testapis\\utils\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F82B580-FFF6-4161-A7A3-2C0AD5301E79}|TestApis\\TestApis.csproj|solutionrelative:testapis\\utils\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "mockApiResponse.json",
+              "DocumentMoniker": "C:\\Users\\Fede\\source\\repos\\TestApis\\TestApis\\mockApiResponse.json",
+              "RelativeDocumentMoniker": "TestApis\\mockApiResponse.json",
+              "ToolTip": "C:\\Users\\Fede\\source\\repos\\TestApis\\TestApis\\mockApiResponse.json",
+              "RelativeToolTip": "TestApis\\mockApiResponse.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-21T01:54:06.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApiCreateUserBadResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\source\\repos\\TestApis\\TestApis\\Utils\\ApiCreateUserBadResponse.cs",
+              "RelativeDocumentMoniker": "TestApis\\Utils\\ApiCreateUserBadResponse.cs",
+              "ToolTip": "C:\\Users\\Fede\\source\\repos\\TestApis\\TestApis\\Utils\\ApiCreateUserBadResponse.cs",
+              "RelativeToolTip": "TestApis\\Utils\\ApiCreateUserBadResponse.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T01:39:16.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "config.json",
+              "DocumentMoniker": "C:\\Users\\Fede\\source\\repos\\TestApis\\TestApis\\config.json",
+              "RelativeDocumentMoniker": "TestApis\\config.json",
+              "ToolTip": "C:\\Users\\Fede\\source\\repos\\TestApis\\TestApis\\config.json",
+              "RelativeToolTip": "TestApis\\config.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-21T01:25:27.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApiCreateUserResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\source\\repos\\TestApis\\TestApis\\Utils\\ApiCreateUserResponse.cs",
+              "RelativeDocumentMoniker": "TestApis\\Utils\\ApiCreateUserResponse.cs",
+              "ToolTip": "C:\\Users\\Fede\\source\\repos\\TestApis\\TestApis\\Utils\\ApiCreateUserResponse.cs",
+              "RelativeToolTip": "TestApis\\Utils\\ApiCreateUserResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T01:20:44.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Utils.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\source\\repos\\TestApis\\TestApis\\Utils\\Utils.cs",
+              "RelativeDocumentMoniker": "TestApis\\Utils\\Utils.cs",
+              "ToolTip": "C:\\Users\\Fede\\source\\repos\\TestApis\\TestApis\\Utils\\Utils.cs",
+              "RelativeToolTip": "TestApis\\Utils\\Utils.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T00:39:07.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\source\\repos\\TestApis\\TestApis\\Utils\\Configuration.cs",
+              "RelativeDocumentMoniker": "TestApis\\Utils\\Configuration.cs",
+              "ToolTip": "C:\\Users\\Fede\\source\\repos\\TestApis\\TestApis\\Utils\\Configuration.cs",
+              "RelativeToolTip": "TestApis\\Utils\\Configuration.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T00:11:12.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApiTests.cs",
+              "DocumentMoniker": "C:\\Users\\Fede\\source\\repos\\TestApis\\TestApis\\Tests\\ApiTests.cs",
+              "RelativeDocumentMoniker": "TestApis\\Tests\\ApiTests.cs",
+              "ToolTip": "C:\\Users\\Fede\\source\\repos\\TestApis\\TestApis\\Tests\\ApiTests.cs",
+              "RelativeToolTip": "TestApis\\Tests\\ApiTests.cs",
+              "ViewState": "AgIAAMEAAAAAAAAAAADwv9MAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T23:12:37.818Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
